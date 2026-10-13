@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norsebold.otf') format('opentype');
+    font-weight: bold; /* Maps to font-weight: 700 or <h1> tags */
+    font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+}
+
+.left-image-div {
+    background: url(/background.jpg);
+    background-size: cover;
+}
+
+.logo-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Norse';
+    color: white;
+    font-size: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 30%;
+}
+
+#odin-logo {
+    height: 100px;
+    padding: 15px;
+}
